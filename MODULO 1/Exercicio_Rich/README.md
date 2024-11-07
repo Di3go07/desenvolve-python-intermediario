@@ -4,10 +4,13 @@ Modulos para costumizar a saida no terminal da impressão de um texto
 ## Ambiente virtual
 Como criar o ambiente virtual Python desse programa
 1. Abra no terminal a pasta do projeto
+   
 2. Se ainda não tiver instalado, instale a ferramenta `virtualenv`:
    ```
    pip install virtualenv
    ```
+
+   
 3. Crie um ambiente virtual na pasta do seu projeto:
    ```
    virtualenv nome_do_ambiente
@@ -16,6 +19,8 @@ Como criar o ambiente virtual Python desse programa
    ```
    python3 -m venv nome_do_ambiente
    ```
+
+   
 4. Ative o ambiente virtual:
    - No Windows:
      ```
@@ -25,6 +30,7 @@ Como criar o ambiente virtual Python desse programa
      ```
      source nome_do_ambiente/bin/activate
      ```
+
 
 5. Agora você está no ambiente virtual. Você pode instalar as dependências específicas do programa usando o `pip` e acessando o arquivo 'requirements'. Por exemplo:
    ```
