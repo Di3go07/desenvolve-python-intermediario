@@ -70,14 +70,14 @@ Função de cada argumento do programa
    - text -> digite um texto ou o caminho para um diretório
 
 **Argumento opcionais**
-   - -h -> mostra uma mensagem de ajuda
-   - -a -> argumento que deve ser passado sempre que o texto for o caminho de um diretório
-   - -c COLOR -> argumento que muda a cor do texto na impressão e necessita de um valor
-   - -hlw HIGHLIGHTWORD -> deixa em destaque uma palavra do texto na impressão e necessita de um valor
-   - -t TITULO -> cria um titulo ao texto impresso e necessita de um valor
-   - -st SUBTITULO SUBTITULO -> cria um titulo e subtitulo para o texto impresso, necessita de dois valores
-   - -lt -> imprime cada paragrafo do documento ou do texto inserido pelo usuário
-   - -pt -> imprime todo o texto e apresenta uma barra de progresso em relação ao processo de leitura feito pelo computador
+   - -h => mostra uma mensagem de ajuda
+   - -a => argumento que deve ser passado sempre que o texto for o caminho de um diretório
+   - -c COLOR => argumento que muda a cor do texto na impressão e necessita de um valor
+   - -hlw HIGHLIGHTWORD => deixa em destaque uma palavra do texto na impressão e necessita de um valor
+   - -t TITULO => cria um titulo ao texto impresso e necessita de um valor
+   - -st SUBTITULO SUBTITULO => cria um titulo e subtitulo para o texto impresso, necessita de dois valores
+   - -lt => imprime cada paragrafo do documento ou do texto inserido pelo usuário
+   - -pt => imprime todo o texto e apresenta uma barra de progresso em relação ao processo de leitura feito pelo computador
 
 Detalhe: com exceção do argumento -a, o usuario só pode passsar um argumento de cada vez
 
