@@ -57,4 +57,6 @@ Como acessar os módulos pelo terminal
    ```
    python3 main.py -a -c blue ./texto.txt
    ```
-   
+      ```
+   python3 main.py -c blue "Numa toca no chão vivia um hobbit"
+   ```
