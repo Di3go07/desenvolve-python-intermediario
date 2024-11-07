@@ -1,7 +1,7 @@
 # Modulo 1 - Exercicio Rich
 Modulos para costumizar a saida no terminal da impressão de um texto
 
-##Ambiente virtual
+## Ambiente virtual
 Como criar o ambiente virtual Python desse programa
 1. Abra no terminal a pasta do projeto
 2. Se ainda não tiver instalado, instale a ferramenta `virtualenv`:
