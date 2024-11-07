@@ -60,3 +60,7 @@ Como acessar os módulos pelo terminal
       ```
    python3 main.py -c blue "Numa toca no chão vivia um hobbit"
    ```
+Lembre-se de que o argumento -a sempre deve ser informado caso o texto fornecido pelo usuário seja o caminho para um arquivo
+
+
+##Argumentos
