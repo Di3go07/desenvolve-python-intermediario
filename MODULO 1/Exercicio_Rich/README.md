@@ -32,6 +32,7 @@ Como criar o ambiente virtual Python desse programa
    ```
    
 Lembre-se de que, ao terminar o desenvolvimento, você pode desativar o ambiente virtual digitando `deactivate` no terminal.
+
 O ambiente virtual ajuda a isolar as dependências do seu projeto, facilitando o gerenciamento e evitando conflitos entre diferentes projetos Python.
 
 ## Linhas de comando
