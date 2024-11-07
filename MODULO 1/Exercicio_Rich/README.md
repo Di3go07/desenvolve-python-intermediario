@@ -34,7 +34,7 @@ Como criar o ambiente virtual Python desse programa
 
 5. Agora você está no ambiente virtual. Você pode instalar as dependências específicas do programa usando o `pip` e acessando o arquivo 'requirements'. Por exemplo:
    ```
-   python3 -m pip install -r requirements.txt
+   python3 -m pip install -r ./docs/requirements.txt
    ```
    
 Lembre-se de que, ao terminar o desenvolvimento, você pode desativar o ambiente virtual digitando `deactivate` no terminal.
