@@ -1,9 +1,9 @@
 import os
 import rich
 from rich.console import Console
+console = Console()
 from rich.theme import Theme
 from rich.style import Style
-console = Console()
 import time
 from time import sleep
 from pynput import keyboard
@@ -11,19 +11,23 @@ import pandas as pd
 import random
 import threading
 import labirinto
-import itens
 
 #criando o personagem
 class Player:
     char = "@"
     xPos = 16
     yPos = 21 
-    itens = 3
+    itens = 0
     dead = False
     #status do personagem
     def position(self):
         labirinto.board[self.yPos][self.xPos] = self.char
     def pegouItens(self):
+        """
+        pegouItens() função da classe acionada quando o player pega um item
+
+        Quando o player está na mesma posição que um item, a função pegouItens() é chamada e adiciona 1 ao valor de itens resgatados pelo player. Além disso, verifica se a quantidade dos itens é igual a 4, caso sejam iguais, a saída é liberada
+        """
         self.itens += 1
         if self.itens == 4:
             labirinto.board[32][14] = " "
@@ -32,6 +36,11 @@ class Player:
             console.print('Saída liberada!')
             sleep(1)
     def vitoria(self):
+        """
+        vitoria() função da classe acionada quando o player chega ao final
+
+        Quando o player se encontra na posição do final, a função vitoria() é ativada e encerra o jogo com uma mensagem de vitória
+        """
         labirinto.board[32][14] = " "
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
@@ -40,6 +49,11 @@ class Player:
         quit()
 
     def isDead(self):
+            """
+            isDead() função da classe acionada quando o player morre
+
+            Quando o inimigo está na mesma posição do labirinto que o player, a função isDead() é ativada e encerra o jogo com uma mensagem final de morte
+            """
             labirinto.board[self.xPos][self.yPos] = " "
             labirinto.limparTabuleiro()
             labirinto.imprimirTabuleiro()
@@ -49,6 +63,11 @@ class Player:
             quit()
 
 #movimentos do personagem
+"""
+funções de movimento
+
+As funções de movimento do player foram dividas para cada movimento que ele possa tomar, sendo eles: para cima(w), para baixo(s), para esquerda(a) e para direita(d). Além disso, elas também possuem o papel de verificar se o caminho está liberado ou se o item pode ser resgatado pelo player
+"""
 def moverCima():
     if labirinto.board[Player.yPos - 1][Player.xPos] == "o":
         Player.pegouItens(Player)
@@ -160,6 +179,11 @@ class Inimigo:
         labirinto.board[16][16] = self.char
     #movimento do inimigo
     def moverInimigo(self):
+        """
+        moverInimigo() função responsável por movimentar o inimigo
+
+        A função pretende criar uma pequena Inteligência Artificial no inimigo do jogo. Para isso, o inimigo consegue tomar decisões do caminho que ele deseja tomar ao escolher de forma aleatória um número de 1 a 4. Caso não tenha barreiras no caminho, o inimgo prossegue para a direção que ele escolheu, mas se apresentar barreiras ele toma outra decisão. Lembre-se: o inimigo se movimento na mesma medida que o player
+        """
         decisao = random.randrange(1, 5)
         print(decisao)
         match decisao:

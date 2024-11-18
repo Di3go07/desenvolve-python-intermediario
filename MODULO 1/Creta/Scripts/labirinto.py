@@ -84,7 +84,7 @@ def start():
     limparTabuleiro()
     for count in board:
         console.print(" ".join(count))
-        #sleep(0.5)
+        sleep(0.5)
     sleep(1)
     board[18][16] = " " 
     limparTabuleiro()
@@ -94,6 +94,11 @@ def start():
     cutscene()
 
 def cutscene():
+    """
+    cutsecen() adiciona uma cutscene ao jogo
+
+    A função muda os caracteres em diferentes índices da matriz labirinto para criar uma sensação de movimento na tela e produzir uma cena inicial ao jogo
+    """
     #movimentos
     for i in range(6):
         #movimento player
