@@ -50,7 +50,7 @@ Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados 
 
 <img  src="./docs/imagem_labirinto.png">
         
-<sob> Aproveite o jogo! </sob>
+Aproveite o jogo!
 
 # 🖥️​ Ambiente virtual
 Como criar o ambiente virtual Python desse programa
