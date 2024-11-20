@@ -27,7 +27,7 @@ Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados 
 **Lembre-se:** cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto <br>
 Aproveite o jogo!
 
-<img alt="imagem do labirinto", src="./docs/imagem_labirinto.png", widht="30px", height="50px", aling="center"/>
+<img alt="imagem do labirinto", src="./docs/imagem_labirinto.png"/>
 
 
 <h3> Controles </h3>
