@@ -8,7 +8,7 @@ CRETA
 
 # 📌 Índice
 <p align="center">    
-  <a href="#-história"> História </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
+  <a href="#-história"> **História** </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-como-jogar"> Como jogar </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#ambiente-virtual"> Ambiente Virtual </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-execução"> Execução </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
