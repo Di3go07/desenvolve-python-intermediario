@@ -28,5 +28,11 @@ Aproveite o jogo!
 
 | Tecla  | Comando |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| w | subir |
+| s | descer |
+| a | esquerda |
+| d | direita |
+| q | sair |
+
+
+
