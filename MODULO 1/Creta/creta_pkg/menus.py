@@ -91,7 +91,7 @@ def comoJogar():
         "O objetivo do jogo é fugir do labirinto sem que o minotauro [indice](V)[/indice] alcance o player [indice](@)[/indice]."
     )
     comoJogar_message.add_row(
-        "Para fugir do labirinto, o player precisa obter quatro itens [indice](o)[/indice] espalhados pelo mapa e, assim, liberar o portão principal. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar."
+        "Para fugir do labirinto, o player precisa obter quatro itens [indice](o)[/indice] espalhados pelo mapa e, assim, liberar o portão principal[indice](X)[/indice]. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar."
     )
     comoJogar_message.add_row(
         "[indice]Lembre-se: [/indice]cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto"
