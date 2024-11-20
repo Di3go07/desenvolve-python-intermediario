@@ -25,6 +25,8 @@ Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados 
 Aproveite o jogo!
 
 <h3> Controles </h3>
-| Tecla | Comando |
-| ----- | ------- |
-| w | subir |
+
+| Tecla  | Comando |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
