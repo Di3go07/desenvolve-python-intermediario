@@ -17,3 +17,14 @@ Na Grécia Antiga, uma construção imponente e grandiosa feita pelo brilhante a
 A época de alimentar o Minotauro chegou e você foi o escolhido para ser enviado ao labrinto de Creta e fazer esse trabalho sujo. Agora, para sobreviver e não virar a comida do monstro, você precisa achar falhas na estrutura que consigam liberar a saída e, o mais importante, não se perder pelos corredores do labirinto. Boa sorte em sua aventura para desvendar a arquitetura complexa de Dédalo e não ser capturado pelo Minotauro.
     </p>
 </article>
+
+# 🎮 Como jogar
+O objetivo do jogo é fugir do labirinto sem que o minotauro **(V)** alcance o player **(@)**.
+Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados pelo mapa e, assim, liberar o portão principal. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar.
+**Lembre-se:** cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto"
+Aproveite o jogo!
+
+<h3> Controles </h3>
+| Tecla | Comando |
+|:-----|-------|
+| w | subir |
