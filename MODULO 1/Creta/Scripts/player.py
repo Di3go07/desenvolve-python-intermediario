@@ -9,7 +9,8 @@ from time import sleep
 from pynput import keyboard
 import pandas as pd
 import random
-import threading
+from playsound import playsound
+
 import labirinto
 
 #criando o personagem
@@ -17,6 +18,7 @@ class Player:
     char = "@"
     xPos = 16
     yPos = 21 
+    passos = 0
     itens = 0
     dead = False
     #status do personagem
@@ -29,6 +31,7 @@ class Player:
         Quando o player está na mesma posição que um item, a função pegouItens() é chamada e adiciona 1 ao valor de itens resgatados pelo player. Além disso, verifica se a quantidade dos itens é igual a 4, caso sejam iguais, a saída é liberada
         """
         self.itens += 1
+        playsound('/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/ponto.mp3', block=True)
         if self.itens == 4:
             labirinto.board[32][14] = " "
             labirinto.limparTabuleiro()
@@ -45,10 +48,11 @@ class Player:
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
         console.print("ESCAPED!!!", style='bold green')
+        console.print(f"Passos: {self.passos}", style="#F2B66D")
         sleep(1)
         quit()
 
-    def isDead(self):
+    def isDead(self, user):
             """
             isDead() função da classe acionada quando o player morre
 
@@ -59,8 +63,8 @@ class Player:
             labirinto.imprimirTabuleiro()
             self.dead = True
             console.print("YOU DIED!!!", style='bold red')
-            sleep(2)
-            quit()
+            sleep(1)
+            console.print(f"Mais sorte da próxima vez, {user}", style="#F2B66D")
 
 #movimentos do personagem
 """
@@ -82,6 +86,7 @@ def moverCima():
         labirinto.board[Player.yPos - 1][Player.xPos] = Player.char
         labirinto.board[Player.yPos][Player.xPos] = " "
         Player.yPos = Player.yPos - 1
+        Player.passos += 1
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
 
@@ -106,6 +111,7 @@ def moverBaixo():
         labirinto.board[Player.yPos + 1][Player.xPos] = Player.char
         labirinto.board[Player.yPos][Player.xPos] = " "
         Player.yPos = Player.yPos + 1
+        Player.passos += 1
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
 
@@ -124,6 +130,7 @@ def moverEsquerda():
         labirinto.board[Player.yPos][Player.xPos - 1] = Player.char
         labirinto.board[Player.yPos][Player.xPos] = " "
         Player.xPos = Player.xPos - 1
+        Player.passos += 1
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
 
@@ -141,6 +148,7 @@ def moverDireita():
         labirinto.board[Player.yPos][Player.xPos + 1] = Player.char
         labirinto.board[Player.yPos][Player.xPos] = " "
         Player.xPos = Player.xPos + 1
+        Player.passos += 1
         labirinto.limparTabuleiro()
         labirinto.imprimirTabuleiro()
 
@@ -185,13 +193,12 @@ class Inimigo:
         A função pretende criar uma pequena Inteligência Artificial no inimigo do jogo. Para isso, o inimigo consegue tomar decisões do caminho que ele deseja tomar ao escolher de forma aleatória um número de 1 a 4. Caso não tenha barreiras no caminho, o inimgo prossegue para a direção que ele escolheu, mas se apresentar barreiras ele toma outra decisão. Lembre-se: o inimigo se movimento na mesma medida que o player
         """
         decisao = random.randrange(1, 5)
-        print(decisao)
         match decisao:
             case 1:
                 if labirinto.board[Inimigo.yPos - 1][Inimigo.xPos] ==  "@":
                     labirinto.board[Inimigo.yPos - 1][Inimigo.xPos] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
-                    Player.isDead(Player)
+                    Player.dead = True
                 elif labirinto.board[Inimigo.yPos - 1][Inimigo.xPos] == " ":
                     labirinto.board[Inimigo.yPos - 1][Inimigo.xPos] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
@@ -205,7 +212,7 @@ class Inimigo:
                 if labirinto.board[Inimigo.yPos + 1][Inimigo.xPos] ==  "@":
                     labirinto.board[Inimigo.yPos + 1][Inimigo.xPos] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
-                    Player.isDead(Player)
+                    Player.dead = True
                 elif labirinto.board[Inimigo.yPos + 1][Inimigo.xPos] == " ":
                     labirinto.board[Inimigo.yPos + 1][Inimigo.xPos] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
@@ -219,7 +226,7 @@ class Inimigo:
                 if labirinto.board[Inimigo.yPos][Inimigo.xPos - 1] ==  "@":
                     labirinto.board[Inimigo.yPos][Inimigo.xPos - 1] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
-                    Player.isDead(Player)
+                    Player.dead = True
                 elif labirinto.board[Inimigo.yPos][Inimigo.xPos - 1] == " ":
                     labirinto.board[Inimigo.yPos][Inimigo.xPos - 1] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
@@ -233,7 +240,7 @@ class Inimigo:
                 if labirinto.board[Inimigo.yPos][Inimigo.xPos + 1] ==  "@":
                     labirinto.board[Inimigo.yPos][Inimigo.xPos + 1] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "
-                    Player.isDead(Player)
+                    Player.dead = True
                 elif labirinto.board[Inimigo.yPos][Inimigo.xPos + 1] == " ":
                     labirinto.board[Inimigo.yPos][Inimigo.xPos + 1] = Inimigo.char
                     labirinto.board[Inimigo.yPos][Inimigo.xPos] = " "

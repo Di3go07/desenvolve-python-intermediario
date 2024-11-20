@@ -19,13 +19,17 @@ def cabecalho():
     console.print("CRETA".center(42), style="bold #D96F32")
     console.print("—" * 42, style="#D98B48")
 
+def apresentacao(user):
+    console.print(f"[opcao]Bem vindo, {user}[/opcao]")
+    print()
+    console.print(f"[opcao]Escolha uma das opções: [/opcao]",)
 def opcoes():
     """
     opcoes() cria as opções de menu que o player pode escolher
     """
-    console.print("[indice] 1 [/indice]- [opcao]Jogar[/opcao]")
-    console.print("[indice] 2 [/indice]- [opcao]História[/opcao]")
-    console.print("[indice] 3 [/indice]- [opcao]Tutorial[/opcao]")
+    console.print(" [indice] 1 [/indice]- [opcao]Jogar[/opcao]")
+    console.print(" [indice] 2 [/indice]- [opcao]História[/opcao]")
+    console.print(" [indice] 3 [/indice]- [opcao]Tutorial[/opcao]")
     console.print("—" * 42, style="#D98B48")
 
 def escolha():
@@ -38,7 +42,7 @@ def escolha():
 
 #HISTÓRIA
 #texto
-def historiaTexto():
+def historiaTexto(user):
     """
     historiaTexto() armazena o texto da página História e seu layout
     """
@@ -49,15 +53,15 @@ def historiaTexto():
         "   Na Grécia Antiga, uma construção imponente e grandiosa feita pelo brilhante arquiteto Dédalo se destaca na ilha de Creta: um labirinto que guarda um monstro terrível em seu interior. Metade homem e metade touro, o Minotauro foi aprisionado dentro desse labirinto a mando do Rei Minos para livrar seu reino desse mal que ele mesmo liberou, de forma que a criatura nunca consiga achar a saída. Porém, a força e a raiva dele são incontroláveis até mesmo para a arquitetura de Dédalo, então o Rei envia todo ano jovens para serem devorados e alimentar a fera."
     )
     historia_message.add_row(
-        "   A época de alimentar o Minotauro chegou e você foi o escolhido para ser enviado ao labrinto de Creta e fazer esse trabalho sujo. Agora, para sobreviver e não virar a comida do monstro, você precisa achar falhas na estrutura que consigam liberar a saída e, o mais importante, não se perder pelos corredores do labirinto. Boa sorte em sua aventura para desvendar a arquitetura complexa de Dédalo e não ser capturado pelo Minotauro."
+        f"   A época de alimentar o Minotauro chegou e você foi o escolhido para ser enviado ao labrinto de Creta e fazer esse trabalho sujo. Agora, para sobreviver e não virar a comida do monstro, você precisa achar falhas na estrutura que consigam liberar a saída e, o mais importante, não se perder pelos corredores do labirinto. Boa sorte, {user}, em sua aventura para desvendar a arquitetura complexa de Dédalo e não ser capturado pelo Minotauro."
     )
     return historia_message
 #painel
-def historia():
+def historia(user):
     """
     historia() imprime a página História
     """
-    console.print(Panel(historiaTexto(), title='[indice]HISTÓRIA[/indice]', style="#D98B48"))
+    console.print(Panel(historiaTexto(user), title='[indice]HISTÓRIA[/indice]', style="#D98B48"))
 
 #TUTORIAL
 #textos
@@ -85,6 +89,9 @@ def comoJogar():
     )
     comoJogar_message.add_row(
         "Para fugir do labirinto, o player precisa obter quatro itens [indice](o)[/indice] espalhados pelo mapa e, assim, liberar o portão principal. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar."
+    )
+    comoJogar_message.add_row(
+        "[indice]Lembre-se: [/indice]cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto"
     )
     comoJogar_message.add_row(
         "Aproveite o jogo!"

@@ -8,6 +8,7 @@ import time
 from time import sleep
 from pynput import keyboard
 import pandas as pd
+import playsound
 import random
 import threading
 
@@ -60,7 +61,7 @@ def spawner():
 
 def preencherTabuleiro():
     """
-    preencherrTabuleiro() adiciona na matriz os obstáculos do labirinto
+    preencherTabuleiro() adiciona na matriz os obstáculos do labirinto
 
     A função le um arquivo externo com as informações de posição do caracter a ser adicionado na matriz do labirinto 
     """
@@ -83,15 +84,14 @@ def start():
     """
     limparTabuleiro()
     for count in board:
-        console.print(" ".join(count))
+        console.print(" ".join(count), style="#F2B66D")
         sleep(0.5)
     sleep(1)
     board[18][16] = " " 
     limparTabuleiro()
     imprimirTabuleiro()
     console.print('Fera liberada!', style='bold white')
-    sleep(1)
-    cutscene()
+
 
 def cutscene():
     """
@@ -196,6 +196,7 @@ def cutscene():
     board[player.Inimigo.yPos][player.Inimigo.xPos] = " "
     player.Inimigo.yPos += 1
     board[player.Inimigo.yPos][player.Inimigo.xPos] = "V"
+    board[18][16] = "=" 
     #salvar alterações
     limparTabuleiro()
     imprimirTabuleiro()
@@ -213,7 +214,8 @@ def imprimirTabuleiro():
     A função junta todos os elementos de cada linha da matriz de "board" para formar o visual do labirinto no terminal
     """
     for count in board:
-        console.print(" ".join(count))
+        console.print(" ".join(count), style="#F2B66D")
+    
 
 
 def limparTabuleiro():
