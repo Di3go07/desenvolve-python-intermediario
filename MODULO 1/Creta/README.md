@@ -26,5 +26,5 @@ Aproveite o jogo!
 
 <h3> Controles </h3>
 | Tecla | Comando |
-|:-----|-------|
+|-----|-------|
 | w | subir |
