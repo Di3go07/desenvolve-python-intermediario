@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module player</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">player</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/meu_ambiente_virtual/Scripts/player.py">/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/meu_ambiente_virtual/Scripts/player.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pynput.keyboard.html">pynput.keyboard</a><br>
+<a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="pandas.html">pandas</a><br>
+<a href="random.html">random</a><br>
+</td><td class="multicolumn"><a href="rich.html">rich</a><br>
+<a href="time.html">time</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="player.html#Inimigo">Inimigo</a>
+</dt><dt class="heading-text"><a href="player.html#Player">Player</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Inimigo">class <strong>Inimigo</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">#criando&nbsp;o&nbsp;inimigo<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Inimigo-moverInimigo"><strong>moverInimigo</strong></a>(self)</dt><dd><span class="code"><a href="#Inimigo-moverInimigo">moverInimigo</a>()&nbsp;função&nbsp;responsável&nbsp;por&nbsp;movimentar&nbsp;o&nbsp;inimigo<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;pretende&nbsp;criar&nbsp;uma&nbsp;pequena&nbsp;Inteligência&nbsp;Artificial&nbsp;no&nbsp;inimigo&nbsp;do&nbsp;jogo.&nbsp;Para&nbsp;isso,&nbsp;o&nbsp;inimigo&nbsp;consegue&nbsp;tomar&nbsp;decisões&nbsp;do&nbsp;caminho&nbsp;que&nbsp;ele&nbsp;deseja&nbsp;tomar&nbsp;ao&nbsp;escolher&nbsp;de&nbsp;forma&nbsp;aleatória&nbsp;um&nbsp;número&nbsp;de&nbsp;1&nbsp;a&nbsp;4.&nbsp;Caso&nbsp;não&nbsp;tenha&nbsp;barreiras&nbsp;no&nbsp;caminho,&nbsp;o&nbsp;inimgo&nbsp;prossegue&nbsp;para&nbsp;a&nbsp;direção&nbsp;que&nbsp;ele&nbsp;escolheu,&nbsp;mas&nbsp;se&nbsp;apresentar&nbsp;barreiras&nbsp;ele&nbsp;toma&nbsp;outra&nbsp;decisão.&nbsp;Lembre-se:&nbsp;o&nbsp;inimigo&nbsp;se&nbsp;movimento&nbsp;na&nbsp;mesma&nbsp;medida&nbsp;que&nbsp;o&nbsp;player</span></dd></dl>
+
+<dl><dt><a name="Inimigo-position"><strong>position</strong></a>(self)</dt><dd><span class="code">#status&nbsp;do&nbsp;inimigo</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>char</strong> = 'V'</dl>
+
+<dl><dt><strong>last_position</strong> = (16, 16)</dl>
+
+<dl><dt><strong>xPos</strong> = 16</dl>
+
+<dl><dt><strong>yPos</strong> = 16</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Player">class <strong>Player</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code">#criando&nbsp;o&nbsp;personagem<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Player-isDead"><strong>isDead</strong></a>(self, user)</dt><dd><span class="code"><a href="#Player-isDead">isDead</a>()&nbsp;função&nbsp;da&nbsp;classe&nbsp;acionada&nbsp;quando&nbsp;o&nbsp;player&nbsp;morre<br>
+&nbsp;<br>
+Quando&nbsp;o&nbsp;inimigo&nbsp;está&nbsp;na&nbsp;mesma&nbsp;posição&nbsp;do&nbsp;labirinto&nbsp;que&nbsp;o&nbsp;player,&nbsp;a&nbsp;função&nbsp;<a href="#Player-isDead">isDead</a>()&nbsp;é&nbsp;ativada&nbsp;e&nbsp;encerra&nbsp;o&nbsp;jogo&nbsp;com&nbsp;uma&nbsp;mensagem&nbsp;final&nbsp;de&nbsp;morte</span></dd></dl>
+
+<dl><dt><a name="Player-pegouItens"><strong>pegouItens</strong></a>(self)</dt><dd><span class="code"><a href="#Player-pegouItens">pegouItens</a>()&nbsp;função&nbsp;da&nbsp;classe&nbsp;acionada&nbsp;quando&nbsp;o&nbsp;player&nbsp;pega&nbsp;um&nbsp;item<br>
+&nbsp;<br>
+Quando&nbsp;o&nbsp;player&nbsp;está&nbsp;na&nbsp;mesma&nbsp;posição&nbsp;que&nbsp;um&nbsp;item,&nbsp;a&nbsp;função&nbsp;<a href="#Player-pegouItens">pegouItens</a>()&nbsp;é&nbsp;chamada&nbsp;e&nbsp;adiciona&nbsp;1&nbsp;ao&nbsp;valor&nbsp;de&nbsp;itens&nbsp;resgatados&nbsp;pelo&nbsp;player.&nbsp;Além&nbsp;disso,&nbsp;verifica&nbsp;se&nbsp;a&nbsp;quantidade&nbsp;dos&nbsp;itens&nbsp;é&nbsp;igual&nbsp;a&nbsp;4,&nbsp;caso&nbsp;sejam&nbsp;iguais,&nbsp;a&nbsp;saída&nbsp;é&nbsp;liberada</span></dd></dl>
+
+<dl><dt><a name="Player-position"><strong>position</strong></a>(self)</dt><dd><span class="code">#status&nbsp;do&nbsp;personagem</span></dd></dl>
+
+<dl><dt><a name="Player-vitoria"><strong>vitoria</strong></a>(self)</dt><dd><span class="code"><a href="#Player-vitoria">vitoria</a>()&nbsp;função&nbsp;da&nbsp;classe&nbsp;acionada&nbsp;quando&nbsp;o&nbsp;player&nbsp;chega&nbsp;ao&nbsp;final<br>
+&nbsp;<br>
+Quando&nbsp;o&nbsp;player&nbsp;se&nbsp;encontra&nbsp;na&nbsp;posição&nbsp;do&nbsp;final,&nbsp;a&nbsp;função&nbsp;<a href="#Player-vitoria">vitoria</a>()&nbsp;é&nbsp;ativada&nbsp;e&nbsp;encerra&nbsp;o&nbsp;jogo&nbsp;com&nbsp;uma&nbsp;mensagem&nbsp;de&nbsp;vitória</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>char</strong> = '@'</dl>
+
+<dl><dt><strong>dead</strong> = False</dl>
+
+<dl><dt><strong>itens</strong> = 0</dl>
+
+<dl><dt><strong>passos</strong> = 0</dl>
+
+<dl><dt><strong>xPos</strong> = 16</dl>
+
+<dl><dt><strong>yPos</strong> = 21</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-moverBaixo"><strong>moverBaixo</strong></a>()</dt></dl>
+ <dl><dt><a name="-moverCima"><strong>moverCima</strong></a>()</dt></dl>
+ <dl><dt><a name="-moverDireita"><strong>moverDireita</strong></a>()</dt></dl>
+ <dl><dt><a name="-moverEsquerda"><strong>moverEsquerda</strong></a>()</dt></dl>
+ <dl><dt><a name="-on_press"><strong>on_press</strong></a>(key)</dt><dd><span class="code"><a href="#-on_press">on_press</a>()&nbsp;le&nbsp;a&nbsp;tecla&nbsp;pressionada&nbsp;no&nbsp;teclado<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;utiliza&nbsp;a&nbsp;biblioteca&nbsp;keyboard&nbsp;para&nbsp;ler&nbsp;qual&nbsp;tecla&nbsp;o&nbsp;usuário&nbsp;apertou&nbsp;no&nbsp;teclado&nbsp;e&nbsp;tomar&nbsp;decisões&nbsp;a&nbsp;partir&nbsp;disso</span></dd></dl>
+ <dl><dt><a name="-sleep"><strong>sleep</strong></a>(...)</dt><dd><span class="code"><a href="#-sleep">sleep</a>(seconds)<br>
+&nbsp;<br>
+Delay&nbsp;execution&nbsp;for&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;seconds.&nbsp;&nbsp;The&nbsp;argument&nbsp;may&nbsp;be<br>
+a&nbsp;floating&nbsp;point&nbsp;number&nbsp;for&nbsp;subsecond&nbsp;precision.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>console</strong> = &lt;console width=190 ColorSystem.TRUECOLOR&gt;</td></tr></table>
+</body></html>

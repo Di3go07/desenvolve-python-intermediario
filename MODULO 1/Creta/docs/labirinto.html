@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module labirinto</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">labirinto</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/meu_ambiente_virtual/Scripts/labirinto.py">/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/meu_ambiente_virtual/Scripts/labirinto.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pynput.keyboard.html">pynput.keyboard</a><br>
+<a href="os.html">os</a><br>
+</td><td class="multicolumn"><a href="pandas.html">pandas</a><br>
+<a href="playsound.html">playsound</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+<a href="rich.html">rich</a><br>
+</td><td class="multicolumn"><a href="threading.html">threading</a><br>
+<a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-criarBordas"><strong>criarBordas</strong></a>()</dt><dd><span class="code"><a href="#-criarBordas">criarBordas</a>()&nbsp;cria&nbsp;as&nbsp;bordas&nbsp;do&nbsp;labirinto<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;adiciona&nbsp;"-"&nbsp;no&nbsp;topo&nbsp;e&nbsp;na&nbsp;base&nbsp;do&nbsp;tabuleiro&nbsp;e&nbsp;"|"&nbsp;nas&nbsp;laterais&nbsp;para&nbsp;representar&nbsp;as&nbsp;bordas&nbsp;dele</span></dd></dl>
+ <dl><dt><a name="-cutscene"><strong>cutscene</strong></a>()</dt><dd><span class="code">cutsecen()&nbsp;adiciona&nbsp;uma&nbsp;cutscene&nbsp;ao&nbsp;jogo<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;muda&nbsp;os&nbsp;caracteres&nbsp;em&nbsp;diferentes&nbsp;índices&nbsp;da&nbsp;matriz&nbsp;labirinto&nbsp;para&nbsp;criar&nbsp;uma&nbsp;sensação&nbsp;de&nbsp;movimento&nbsp;na&nbsp;tela&nbsp;e&nbsp;produzir&nbsp;uma&nbsp;cena&nbsp;inicial&nbsp;ao&nbsp;jogo</span></dd></dl>
+ <dl><dt><a name="-imprimirTabuleiro"><strong>imprimirTabuleiro</strong></a>()</dt><dd><span class="code"><a href="#-imprimirTabuleiro">imprimirTabuleiro</a>()&nbsp;imprime&nbsp;no&nbsp;terminal&nbsp;o&nbsp;labirinto<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;junta&nbsp;todos&nbsp;os&nbsp;elementos&nbsp;de&nbsp;cada&nbsp;linha&nbsp;da&nbsp;matriz&nbsp;de&nbsp;"board"&nbsp;para&nbsp;formar&nbsp;o&nbsp;visual&nbsp;do&nbsp;labirinto&nbsp;no&nbsp;terminal</span></dd></dl>
+ <dl><dt><a name="-limparTabuleiro"><strong>limparTabuleiro</strong></a>()</dt><dd><span class="code"><a href="#-limparTabuleiro">limparTabuleiro</a>()&nbsp;limpa&nbsp;o&nbsp;terminal<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;fornece&nbsp;ao&nbsp;sistema&nbsp;o&nbsp;comando&nbsp;"clear"&nbsp;e&nbsp;limpa&nbsp;o&nbsp;terminal</span></dd></dl>
+ <dl><dt><a name="-preencherTabuleiro"><strong>preencherTabuleiro</strong></a>()</dt><dd><span class="code"><a href="#-preencherTabuleiro">preencherTabuleiro</a>()&nbsp;adiciona&nbsp;na&nbsp;matriz&nbsp;os&nbsp;obstáculos&nbsp;do&nbsp;labirinto<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;le&nbsp;um&nbsp;arquivo&nbsp;externo&nbsp;com&nbsp;as&nbsp;informações&nbsp;de&nbsp;posição&nbsp;do&nbsp;caracter&nbsp;a&nbsp;ser&nbsp;adicionado&nbsp;na&nbsp;matriz&nbsp;do&nbsp;labirinto</span></dd></dl>
+ <dl><dt><a name="-sleep"><strong>sleep</strong></a>(...)</dt><dd><span class="code"><a href="#-sleep">sleep</a>(seconds)<br>
+&nbsp;<br>
+Delay&nbsp;execution&nbsp;for&nbsp;a&nbsp;given&nbsp;number&nbsp;of&nbsp;seconds.&nbsp;&nbsp;The&nbsp;argument&nbsp;may&nbsp;be<br>
+a&nbsp;floating&nbsp;point&nbsp;number&nbsp;for&nbsp;subsecond&nbsp;precision.</span></dd></dl>
+ <dl><dt><a name="-spawner"><strong>spawner</strong></a>()</dt><dd><span class="code"><a href="#-spawner">spawner</a>()&nbsp;imprime&nbsp;no&nbsp;terminal&nbsp;o&nbsp;spawner<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;adiciona&nbsp;ao&nbsp;labirinto&nbsp;uma&nbsp;área&nbsp;central&nbsp;onde&nbsp;se&nbsp;enconntra&nbsp;o&nbsp;inimigo&nbsp;do&nbsp;player</span></dd></dl>
+ <dl><dt><a name="-start"><strong>start</strong></a>()</dt><dd><span class="code"><a href="#-start">start</a>()&nbsp;primeira&nbsp;impressão&nbsp;do&nbsp;labirinto&nbsp;no&nbsp;terminal<br>
+&nbsp;<br>
+A&nbsp;função&nbsp;tem&nbsp;a&nbsp;mesma&nbsp;proposta&nbsp;da&nbsp;função&nbsp;<a href="#-imprimirTabuleiro">imprimirTabuleiro</a>(),&nbsp;porém&nbsp;tem&nbsp;elementos&nbsp;diferentes&nbsp;por&nbsp;se&nbsp;tratar&nbsp;da&nbsp;primeira&nbsp;impressão&nbsp;dele</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>board</strong> = [[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ...], ...]<br>
+<strong>console</strong> = &lt;console width=190 ColorSystem.TRUECOLOR&gt;</td></tr></table>
+</body></html>
