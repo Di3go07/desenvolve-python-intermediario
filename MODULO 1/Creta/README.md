@@ -8,7 +8,7 @@ CRETA
 
 # 📌 Índice
 <p align="center">    
-  <a href="#👨‍💻-Desenvolvedor"> História </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
+  <a href="#-👨‍💻-Desenvolvedor"> História </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
 
 
 # 📜 História
