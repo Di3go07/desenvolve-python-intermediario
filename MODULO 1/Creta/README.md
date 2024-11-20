@@ -118,7 +118,7 @@ Como rodar o jogo no seu terminal
    ```
    python3 main.py Di3go -s
    ```
-Lembre-se de que sempre é necessário fornecer um nome de usuário e o argumento -s deve ser informado quando desejar remover o áudio do jogo <br>
+Lembre-se de que sempre é necessário fornecer um nome de usuário e o argumento -s deve ser informado apenas quando desejar remover o áudio do jogo <br>
 Detalhe: quando iniciada, mesmo se o programa finalizar, a música só vai parar de tocar quando acabar sua duração  
 
 # 🗂️ Documentação
