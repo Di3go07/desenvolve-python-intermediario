@@ -76,3 +76,28 @@ Lembre-se de que, ao terminar o desenvolvimento, você pode desativar o ambiente
 O ambiente virtual ajuda a isolar as dependências do seu projeto, facilitando o gerenciamento e evitando conflitos entre diferentes projetos Python.
 
 # ⚙ Execução
+Como rodar o jogo no seu terminal
+1. Abra a pasta "Creta" do projeto no terminal, caso não esteja aberta
+2. Execute o ambiente virtual caso ele não esteja ativo, utilizando o nome do ambiente que você criou anteriormente
+   - No Windows:
+     ```
+     .\nome_do_ambiente\Scripts\activate
+     ```
+   - No Linux/Mac:
+     ```
+     source nome_do_ambiente/bin/activate
+     ```
+3. Execute este comando para verificar os argumentos disponíveis:
+   ```
+   python3 main.py
+   ```
+4. Execute esse comando para conhcer cada argumento:
+   ```
+   python3 main.py -h
+   ```
+5. Para abrir o jogo, digite um comando como o do exemplo abaixo:
+   ```
+   python3 main.py Di3go -s
+   ```
+Lembre-se de que sempre é necessário fornecer um nome de usuário e o argumento -s deve ser informado quando desejar remover o áudio do jogo
+
