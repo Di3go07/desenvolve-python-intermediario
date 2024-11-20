@@ -13,7 +13,7 @@ CRETA
   <a href="#ambiente-virtual"> Ambiente Virtual </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-execução"> Execução </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-documentação"> Documentação </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
-  <a href="#-desenvolvedor"> Desenvolvedor </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
+  <a href="#-desenvolvedor"> Desenvolvedor </a>      
 
 # 📜 História
 <article>
