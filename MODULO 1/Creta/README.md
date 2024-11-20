@@ -42,12 +42,16 @@ Como criar o ambiente virtual Python desse programa
 1. Abra no terminal a pasta do projeto, "Creta"
    
 2. Se ainda não tiver instalado, instale a ferramenta `virtualenv`:
+   - No Windows:
    ```
    pip install virtualenv
    ```
-
+   - No Linux/Mac:
+   ```
+   sudo apt install virtualenv
+   ```
    
-3. Crie um ambiente virtual na pasta do projeto:
+4. Crie um ambiente virtual na pasta do projeto:
    ```
    virtualenv nome_do_ambiente
    ```
@@ -56,7 +60,7 @@ Como criar o ambiente virtual Python desse programa
    python3 -m venv nome_do_ambiente
    ```
 
-4. Ative o ambiente virtual:
+5. Ative o ambiente virtual:
    - No Windows:
      ```
      .\nome_do_ambiente\Scripts\activate
@@ -66,7 +70,7 @@ Como criar o ambiente virtual Python desse programa
      source nome_do_ambiente/bin/activate
      ```
 
-5. Agora você está no ambiente virtual. Você pode instalar as dependências específicas do programa usando o `pip` e acessando o arquivo 'requirements'. Por exemplo:
+6. Agora você está no ambiente virtual. Você pode instalar as dependências específicas do programa usando o `pip` e acessando o arquivo 'requirements'. Por exemplo:
    ```
    python3 -m pip install -r ./requirements.txt
    ```
