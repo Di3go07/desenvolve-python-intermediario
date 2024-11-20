@@ -101,3 +101,7 @@ Como rodar o jogo no seu terminal
    ```
 Lembre-se de que sempre é necessário fornecer um nome de usuário e o argumento -s deve ser informado quando desejar remover o áudio do jogo
 
+# 👨‍💻 Desenvolvedor
+
+Diego Penna Andrade Barros <br>
+PDITA 274
