@@ -29,7 +29,8 @@ Aproveite o jogo!
 
 <h3> Labirinto </h3>
 Conheça o cenário do jogo e seus elementos principais
-<img  src="./docs/imagem_labirinto.png">
+<br>
+<img  src="./docs/imagem_labirinto.png", align=center>
 
 
 <h3> Controles </h3>
