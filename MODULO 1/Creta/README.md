@@ -46,7 +46,7 @@ Como criar o ambiente virtual Python desse programa
    ```
    pip install virtualenv
    ```
-   - No Linux/Mac:
+   - No Linux:
    ```
    sudo apt install virtualenv
    ```
