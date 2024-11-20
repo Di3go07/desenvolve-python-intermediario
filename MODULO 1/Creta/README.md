@@ -124,11 +124,11 @@ Detalhe: quando iniciada, mesmo se o programa finalizar, a música só vai parar
 Este repositório do projeto conta com alguns documentos que são importantes para a excecução do jogo ou para conhecer suas caracteristícas <br>
 
 **Essenciais ao jogo:** <br>
-- labirintoInfos.csv ==> tabela com a posição x e y e com o caracter a ser inserido na matriz do labirinto. O programa le as informações presentes em cada linha e adiciona o elemento ao labirinto para prenche-lo com os obstáculos <br>
-- requirements.txt ==> arquivo de texto com as bibliotecas utilizadas no projeto
+- labirintoInfos.csv => tabela com a posição x e y e com o caracter a ser inserido na matriz do labirinto. O programa le as informações presentes em cada linha e adiciona o elemento ao labirinto para prenche-lo com os obstáculos <br>
+- requirements.txt => arquivo de texto com as bibliotecas utilizadas no projeto
 
 **Extra:** <br>
-- pasta docs -> a pasta conta com arquivos '.html' que explicam o funcionamento das funções criadas para o jogo, as chamadas docstrings do projeto
+- pasta docs => a pasta conta com arquivos '.html' que explicam o funcionamento das funções criadas para o jogo, as chamadas docstrings do projeto
 
 # 👨‍💻 Desenvolvedor
 
