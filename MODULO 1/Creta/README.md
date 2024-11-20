@@ -27,11 +27,6 @@ Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados 
 **Lembre-se:** cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto <br>
 Aproveite o jogo!
 
-<h3> Labirinto </h3>
-<p> Conheça o cenário do jogo e seus elementos principais </p>
-<img  src="./docs/imagem_labirinto.png">
-
-
 <h3> Controles </h3>
 
 | Tecla  | Comando |
@@ -41,6 +36,11 @@ Aproveite o jogo!
 | a | esquerda |
 | d | direita |
 | q | sair |
+
+<h3> Labirinto </h3>
+<p> Conheça o cenário do jogo e seus elementos principais </p>
+<img  src="./docs/imagem_labirinto.png">
+
 
 # 🖥️​ Ambiente virtual
 Como criar o ambiente virtual Python desse programa
