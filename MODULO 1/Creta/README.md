@@ -47,10 +47,9 @@ Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados 
 
 <h3> Labirinto </h3>
 <p> Conheça o cenário do jogo e seus elementos principais </p>
-<h1 align="center">
-        <img  src="./docs/imagem_labirinto.png">
-</h1>
 
+<img  src="./docs/imagem_labirinto.png">
+        
 Aproveite o jogo!
 
 # 🖥️​ Ambiente virtual
