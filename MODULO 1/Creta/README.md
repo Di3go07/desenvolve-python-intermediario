@@ -6,6 +6,11 @@
 CRETA    
 </h1>
 
+# 📌 Índice
+<p align="center">    
+  <a href="#📜-Historia"> Logotipo ou Banner </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
+
+
 # 📜 História
 <article>
     <p> 
