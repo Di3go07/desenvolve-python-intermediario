@@ -3,6 +3,9 @@
         <img alt="Banner" title="#Banner" style="object-fit: cover; height:250px;" src="https://www.shutterstock.com/image-illustration/ancient-greece-scene-historic-mythology-600nw-1921938134.jpg"  />
     </a>
 </h1>
+
 <h1 align="center">
 CRETA    
 </h1>
+
+# 📜 História
