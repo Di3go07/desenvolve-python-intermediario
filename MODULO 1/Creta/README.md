@@ -37,5 +37,22 @@ Aproveite o jogo!
 | d | direita |
 | q | sair |
 
+# 🖥️​ Ambiente virtual
+Como criar o ambiente virtual Python desse programa
+1. Abra no terminal a pasta do projeto
+   
+2. Se ainda não tiver instalado, instale a ferramenta `virtualenv`:
+   ```
+   pip install virtualenv
+   ```
 
+   
+3. Crie um ambiente virtual na pasta do seu projeto:
+   ```
+   virtualenv nome_do_ambiente
+   ```
+   ou
+   ```
+   python3 -m venv nome_do_ambiente
+   ```
 
