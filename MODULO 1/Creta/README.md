@@ -12,7 +12,7 @@ CRETA
   <a href="#-como-jogar"> Como jogar </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#ambiente-virtual"> Ambiente Virtual </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-execução"> Execução </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
-  <a href="#-documentação"> Documentação </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
+  <a href="#%EF%B8%8F-documentação"> Documentação </a> &nbsp; &nbsp; &nbsp; | &nbsp; &nbsp; &nbsp;        
   <a href="#-desenvolvedor"> Desenvolvedor </a>      
 
 # 📜 História
