@@ -112,10 +112,10 @@ Lembre-se de que sempre é necessário fornecer um nome de usuário e o argument
 Detalhe: quando iniciada, mesmo se o programa finalizar, a música só vai parar de tocar quando acabar sua duração  
 
 # 🗂️ Documentação
-Este repositório do projeto conta com alguns documentos que são importantes para a excecução do jogo ou para conhecer suas caracteristícas
-**Essencial ao jogo:**
-labirintoInfos.csv -> tabela com a posição x e y e com o caracter a ser inserido na matriz do labirinto. O programa le as informações presentes em cada linha e adiciona o elemento ao labirinto para prenche-lo com os obstáculos
-**Extra:**
+Este repositório do projeto conta com alguns documentos que são importantes para a excecução do jogo ou para conhecer suas caracteristícas <br>
+**Essencial ao jogo:** <br>
+labirintoInfos.csv -> tabela com a posição x e y e com o caracter a ser inserido na matriz do labirinto. O programa le as informações presentes em cada linha e adiciona o elemento ao labirinto para prenche-lo com os obstáculos <br>
+**Extra:** <br>
 pasta docs -> a pasta conta com arquivos '.html' que explicam o funcionamento das funções criadas para o jogo, as chamadas docstrings do projeto
 
 # 👨‍💻 Desenvolvedor
