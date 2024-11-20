@@ -22,8 +22,8 @@ A época de alimentar o Minotauro chegou e você foi o escolhido para ser enviad
 </article>
 
 # 🎮 Como jogar
-O objetivo do jogo é fugir do labirinto sem que o minotauro **(V)** alcance o player **(@)**.
-Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados pelo mapa e, assim, liberar o portão principal. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar.
+O objetivo do jogo é fugir do labirinto sem que o minotauro **(V)** alcance o player **(@)**. <br>
+Para fugir do labirinto, o player precisa obter quatro itens **(o)** espalhados pelo mapa e, assim, liberar o portão principal. Quando o jogo é iniciado, uma pequena cutscene da impressão do tabuleiro e de uma cena de perseguição acontece antes do player estar autorizado a jogar. <br>
 **Lembre-se:** cada passo seu também é um movimento feito pelo minotauro, então pense bem em como prosseguir pelo labirinto"
 Aproveite o jogo!
 
