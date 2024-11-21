@@ -65,7 +65,7 @@ def preencherTabuleiro():
 
     A função le um arquivo externo com as informações de posição do caracter a ser adicionado na matriz do labirinto 
     """
-    df = pd.read_csv('/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/labirintoInfos.csv')
+    df = pd.read_csv('./labirintoInfos.csv')
     for index, row in df.iterrows():
         board[row['eixoY']][row['eixoX']] = row['char'] #le as informações de cada tabela do arquivo para adicionar os elementos na matriz
     board[29][18] = 'o'
@@ -224,4 +224,7 @@ def limparTabuleiro():
 
     A função fornece ao sistema o comando "clear" e limpa o terminal
     """
-    os.system('clear')
+    if os.name == 'posix':
+        os.system('clear')
+    else:
+        os.system('cls')
