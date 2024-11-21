@@ -31,7 +31,7 @@ class Player:
         Quando o player está na mesma posição que um item, a função pegouItens() é chamada e adiciona 1 ao valor de itens resgatados pelo player. Além disso, verifica se a quantidade dos itens é igual a 4, caso sejam iguais, a saída é liberada
         """
         self.itens += 1
-        playsound('/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/ponto.mp3', block=True)
+        playsound('./docs/ponto.mp3', block=True)
         if self.itens == 4:
             labirinto.board[32][14] = " "
             labirinto.limparTabuleiro()

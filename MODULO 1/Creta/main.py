@@ -20,7 +20,7 @@ args = parser.parse_args() #interpreta o comando
 if not args.s:
     def loopSound():
         while True:
-            playsound('/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/musica.mp3', block=True)
+            playsound('./docs/musica.mp3', block=True)
 
     loopThread = threading.Thread(target=loopSound, name='backgroundMusicThread')
     loopThread.daemon = True #desativa a música apenas após sua execução finalizar
@@ -53,7 +53,7 @@ def menu():
                 #verifca sempre se o player está morto
                 if player1.dead == True:
                     if not args.s:
-                        playsound('/home/PDITA274/Documentos/PYTHON/MODULO_1/jogo_labirinto/death.mp3', block=False)
+                        playsound('./docs/death.mp3', block=False)
                     player1.isDead(args.user)
                     sleep(2)
                     quit()
